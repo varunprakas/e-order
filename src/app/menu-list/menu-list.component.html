@@ -1,0 +1,24 @@
+<!-- As a link -->
+<nav class="navbar bg-light border-0 padding-0">
+    <div class="container-fluid border-both">
+            <span class="navbar-brand padding-0">3rd rest</span>
+            <div class="d-flex border-start padding-both">
+                <span class="border-circle"><i class="fa fa-info"></i></span>
+            </div>
+        
+    </div>
+</nav>
+<div *ngFor="let detail of menuSelection">
+    <ul class="list-group">
+        <li class="list-group-item active text-center bg-light border-0 text-dark fw-semibold rounded-0 p-3"
+            aria-current="true">{{detail.Name}}</li>
+        <li *ngFor="let item of detail.MenuItems" (click)="navigateToDetails(item.MenuId)"
+            class="list-group-item  d-flex justify-content-between align-items-start rounded-0 cursor">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">{{item.Name}}</div>
+                {{item.Description}}
+            </div>
+            <span class="badge rounded-pill rounded-0 text-dark">{{item.Price}}</span>
+        </li>
+    </ul>
+</div>

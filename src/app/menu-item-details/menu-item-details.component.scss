@@ -1,0 +1,39 @@
+
+.padding-both{
+    padding: 17px 0;
+}
+.padding-0{
+    padding: 0;
+}
+.border-both{
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 0 21px;
+}
+
+.border-right{
+ border-right: 1px solid #dee2e6;
+}
+.wrap-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-brand{
+    font-size: 41px;
+}
+.pleft-20{
+    padding-left: 20px;
+}
+.pright-7{
+    padding-right: 7px;
+}
+.ptop-15{
+    padding-top: 15px;
+}
+.cursor{
+    cursor: pointer;
+}
+.pbottom-10{
+    padding-bottom: 15px;
+}

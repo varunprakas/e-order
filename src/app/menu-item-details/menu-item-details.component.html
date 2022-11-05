@@ -1,0 +1,21 @@
+<!-- As a link -->
+<nav class="navbar bg-light border-0 padding-0">
+    <div class="container-fluid border-both">
+        <div class="wrap-top">
+            <div class="border-right">
+                <a class="navbar-brand pright-7 cursor" (click)="backClicked()">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="pleft-20">{{menuTitle}}</div>
+        </div>
+
+    </div>
+</nav>
+
+<div *ngFor="let item of selectedMenu" class="bg-light  px-4 pbottom-10">
+    <p class="lead ptop-15"> {{item.Name}}</p>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of item.Options">{{item.Name}}</li>
+    </ul>
+</div>
